@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio del Curso de Marketing Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <div data-include="barra_navegacion.html"></div>
+</head>
+<body>
+<div class="cards-container">
+    <div class="cards-set active">
+        <div class="card">Access to marketing tools</div>
+        <div class="card">Templates</div>
+        <div class="card">Discussion forums</div>
+    </div>
+    <div class="cards-set">
+        <div class="card">Video tutorials</div>
+        <div class="card">Interactive quizzes</div>
+        <div class="card">Downloadable PDF guides</div>
+    </div>
+    <button class="toggle-btn">Ver Más</button>
+</div>
+
+
+</body>
+    <script src="js/include.js"></script>
+<style>
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.cards-set {
+    display: flex;
+    gap: 1rem;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+}
+
+.cards-set.active {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: all;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .cards-set {
+        flex-direction: column;
+    }
+}
+
+</style>
+</html>
