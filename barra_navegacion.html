@@ -1,34 +1,27 @@
 <head>
   <base target="_top">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <img src="https://drive.google.com/thumbnail?id=16Cm_tM22vmC2i9xfTgQXuMVJ2kVNAh4W" alt="Logo del Curso" style="width: 70px;"/>
+    <nav class="navbar" style=" display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 5%; background-color: #333000;
+    color: #fff; position: sticky; top: 0; z-index: 10; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
+        <div class="navbar-logo" style="display: flex; align-items: center; font-size: 1.2rem; font-weight: 700;">
+            <img src="https://drive.google.com/thumbnail?id=16Cm_tM22vmC2i9xfTgQXuMVJ2kVNAh4W" alt="Logo del Curso" style="width: 40px; height: 40px; margin-right: 0.5rem;"/>
             <span>Digital Marketing Course</span>
         </div>
-        <ul class="navbar-links">
+        <ul class="navbar-links" style="display: flex; list-style: none;">
             <li><a href="index.html">Home</a></li>
             <li><a href="recursos.html">Resources</a></li>
             <li><a href="#metodologias">Methodologies</a></li>
             <li><a href="#metodologia">Roles</a></li>
         </ul>
-        <div class="navbar-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="navbar-toggle" style="display: none; flex-direction: column; cursor: pointer;">
+            <span style="width: 25px; height: 3px; background-color: #fff; margin: 3px 0; transition: 0.4s;"></span>
+            <span style="width: 25px; height: 3px; background-color: #fff; margin: 3px 0; transition: 0.4s;"></span>
+            <span style="width: 25px; height: 3px; background-color: #fff; margin: 3px 0; transition: 0.4s;"></span>
         </div>
     </nav>
-
-    <!-- Contenido de la página -->
-    <header id="inicio">
-        <!-- Contenido del header aquí -->
-    </header>
-
-
 
 <script>
     document.querySelector('.navbar-toggle').addEventListener('click', function() {
