@@ -14,3 +14,10 @@ function includeHTML() {
 }
 
 window.addEventListener('DOMContentLoaded', includeHTML);
+
+
+document.querySelector('.toggle-btn').addEventListener('click', function() {
+    const cardSets = document.querySelectorAll('.cards-set');
+    cardSets.forEach(set => set.classList.toggle('active'));
+    this.textContent = this.textContent === 'Ver Más' ? 'Ver Menos' : 'Ver Más';
+});
