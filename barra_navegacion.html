@@ -1,33 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <base target="_top">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar" style=" display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 5%; background-color: #333000;
-    color: #fff; position: sticky; top: 0; z-index: 10; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
-        <div class="navbar-logo" style="display: flex; align-items: center; font-size: 1.2rem; font-weight: 700;">
-            <img src="https://drive.google.com/thumbnail?id=16Cm_tM22vmC2i9xfTgQXuMVJ2kVNAh4W" alt="Logo del Curso" style="width: 40px; height: 40px; margin-right: 0.5rem;"/>
-            <span>Digital Marketing Course</span>
-        </div>
-        <ul class="navbar-links" style="display: flex; list-style: none;">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="recursos.html">Resources</a></li>
-            <li><a href="#metodologias">Methodologies</a></li>
-            <li><a href="#metodologia">Roles</a></li>
-        </ul>
-        <div class="navbar-toggle" style="display: none; flex-direction: column; cursor: pointer;">
-            <span style="width: 25px; height: 3px; background-color: #fff; margin: 3px 0; transition: 0.4s;"></span>
-            <span style="width: 25px; height: 3px; background-color: #fff; margin: 3px 0; transition: 0.4s;"></span>
-            <span style="width: 25px; height: 3px; background-color: #fff; margin: 3px 0; transition: 0.4s;"></span>
-        </div>
-    </nav>
 
-<script>
-    document.querySelector('.navbar-toggle').addEventListener('click', function() {
-        this.classList.toggle('active');
-        document.querySelector('.navbar').classList.toggle('active');
-    });
-</script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="your-logo.png" width="30" height="30" alt="Logo">
+    <span class="ml-2">Your Text Here</span>
+  </a>
+  
+  <!-- Button for mobile view -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#resources">Resources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#methodologies">Methodologies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#roles">Roles</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+</html>
