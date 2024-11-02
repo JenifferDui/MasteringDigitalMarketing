@@ -27,6 +27,45 @@ section {
     margin: auto;
 }
 
+.numbered-list {
+    list-style: none;
+    counter-reset: myCounter;
+    padding-left: 65px;
+  }
+
+  .numbered-list li {
+    counter-increment: myCounter;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 15px 15px 15px;
+    /* Espacio a la izquierda para evitar que el contenido se superponga con el número */
+  }
+
+  .numbered-list li::before {
+    content: counter(myCounter);
+    font-size: 24px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #886909;
+    color: #ffffff;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 h2 {
     font-size: 1.8rem;
     color: #007bff;
