@@ -78,7 +78,7 @@ ul {
 }
 
 li {
-    margin: 0.8rem 0;
+    
     font-size: 1rem;
     color: #555;
 }
@@ -86,7 +86,7 @@ li {
 .population p {
     font-size: 1.1rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #76797d;
 }
 
 </style>
