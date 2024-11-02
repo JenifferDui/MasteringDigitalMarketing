@@ -4,6 +4,11 @@ body {
     line-height: 1.6;
 }
 
+.bold-inline {
+    font-weight: bold;
+    display: inline;
+  }
+
 .header-container {
     background: #007bff;
     color: #fff;
