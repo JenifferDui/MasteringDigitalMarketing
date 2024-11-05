@@ -55,39 +55,72 @@
     <div class="container text-center my-5">
   <h2 class="mb-4">Resources</h2>
 
-  <!-- Card Container -->
-  <div class="card-container">
-    <!-- Card 1 -->
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Resource 1">
-      <div class="card-body">
-        <h5 class="card-title">Resource 1</h5>
-        <p class="card-text">A brief description of the first resource goes here.</p>
+  <!-- Carousel -->
+  <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Resource 1">
+          <div class="card-body">
+            <h5 class="card-title">Resource 1</h5>
+            <p class="card-text">A brief description of the first resource goes here.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Resource 2">
+          <div class="card-body">
+            <h5 class="card-title">Resource 2</h5>
+            <p class="card-text">A brief description of the second resource goes here.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Resource 3">
+          <div class="card-body">
+            <h5 class="card-title">Resource 3</h5>
+            <p class="card-text">A brief description of the third resource goes here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Resource 4">
+          <div class="card-body">
+            <h5 class="card-title">Resource 4</h5>
+            <p class="card-text">A brief description of the fourth resource goes here.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Resource 5">
+          <div class="card-body">
+            <h5 class="card-title">Resource 5</h5>
+            <p class="card-text">A brief description of the fifth resource goes here.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Resource 6">
+          <div class="card-body">
+            <h5 class="card-title">Resource 6</h5>
+            <p class="card-text">A brief description of the sixth resource goes here.</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Card 2 -->
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Resource 2">
-      <div class="card-body">
-        <h5 class="card-title">Resource 2</h5>
-        <p class="card-text">A brief description of the second resource goes here.</p>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Resource 3">
-      <div class="card-body">
-        <h5 class="card-title">Resource 3</h5>
-        <p class="card-text">A brief description of the third resource goes here.</p>
-      </div>
-    </div>
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-
-  <!-- Button to Next Cards -->
-  <button class="btn btn-next">See More Resources</button>
 </div>
+
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
