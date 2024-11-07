@@ -13,16 +13,13 @@
             color: #fff;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
         }
 
         .container {
             text-align: center;
             max-width: 800px;
             margin: auto;
+            padding: 20px;
         }
 
         .title {
@@ -40,14 +37,20 @@
         }
 
         .step-card {
-            background-color: #1a1a1a;
+            background-color: #121212;
             padding: 1.5rem;
-            border-radius: 10px;
-            width: 200px;
+            border-radius: 8px;
+            width: 250px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
 
         .step-number {
@@ -65,14 +68,16 @@
         }
 
         .step-title {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
+            color: #ffffff;
         }
 
         .step-description {
             font-size: 0.9rem;
-            color: #ccc;
+            color: #b3b3b3;
+            text-align: center;
         }
 
         /* Responsividad */
@@ -89,37 +94,18 @@
 </head>
 <body>
 
-<div class="container">
-    <h1 class="title">Web Development Methodology</h1>
-    <div class="steps">
-        <div class="step-card">
-            <div class="step-number">1</div>
-            <div class="step-title">Analyze Requirements</div>
-            <p class="step-description">Identify and document the needs and goals of the project.</p>
-        </div>
-        <div class="step-card">
-            <div class="step-number">2</div>
-            <div class="step-title">Identify Target Audience</div>
-            <p class="step-description">Determine the key demographic and tailor content for them.</p>
-        </div>
-        <div class="step-card">
-            <div class="step-number">3</div>
-            <div class="step-title">Establish Structure</div>
-            <p class="step-description">Create a site map and set up the foundation of the site.</p>
-        </div>
-        <div class="step-card">
-            <div class="step-number">4</div>
-            <div class="step-title">Create Content</div>
-            <p class="step-description">Develop the text, images, and multimedia needed for the site.</p>
-        </div>
-        <div class="step-card">
-            <div class="step-number">5</div>
-            <div class="step-title">Design Visuals</div>
-            <p class="step-description">Craft an appealing and cohesive look for the website.</p>
-        </div>
-    </div>
-</div>
+    <!-- Barra de Navegación -->
+    <div data-include="barra_navegacion.html"></div>
 
-</body>
-</html>
-
+    <!-- Contenido Principal -->
+    <div class="container">
+        <h1 class="title">Web Development Methodology</h1>
+        <div class="steps">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <div class="step-title">Analyze Requirements</div>
+                <p class="step-description">Identify and document the needs and goals of the project.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <div class="step
