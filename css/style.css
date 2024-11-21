@@ -5,6 +5,12 @@
     color: #333;
     line-height: 1.6;
 }
+.score-container {
+  margin: 20px 0;
+  font-size: 24px;
+  color: #333;
+}
+
 
 .bold-inline {
     font-weight: bold;
