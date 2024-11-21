@@ -33,17 +33,20 @@ function renderGrid() {
 
 function handleMouseDown(event) {
   startCell = event.target;
+  console.log('Selection started at:', startCell.textContent);
 }
 
 function handleMouseUp(event) {
   if (!startCell) return;
   const endCell = event.target;
   const selectedWord = getSelectedWord(startCell, endCell);
-  if (words.includes(selectedWord) && !foundWords.has(selectedWord)) {
+  console.log('Selected word:', selectedWord);
+  if (words.includes(selectedWord)) {
     highlightSelection(startCell, endCell);
-    foundWords.add(selectedWord);
-    updateScore();
+    updateScore(selectedWord);
     markWordFound(selectedWord);
+  } else {
+    console.log('Invalid selection');
   }
   startCell = null;
 }
@@ -92,9 +95,10 @@ function highlightSelection(start, end) {
   });
 }
 
-function updateScore() {
-  score += 10; // Incrementa 10 puntos por cada palabra encontrada.
+function updateScore(word) {
+  score += 10;
   document.getElementById('score').textContent = score;
+  console.log(`You found "${word}"! Score: ${score}`);
 }
 
 function markWordFound(word) {
